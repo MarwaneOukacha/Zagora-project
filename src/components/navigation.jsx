@@ -1,4 +1,7 @@
 import React from "react";
+import { FaSignInAlt } from "react-icons/fa"; // Import the login icon
+import { Link as ScrollLink } from "react-scroll"; // Import Link from react-scroll for smooth scrolling
+import { Link } from "react-router-dom"; // Import Link from react-router-dom for page navigation
 
 export const Navigation = (props) => {
   return (
@@ -11,57 +14,62 @@ export const Navigation = (props) => {
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
           >
-            {" "}
-            <span className="sr-only">Toggle navigation</span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
+            <span className="sr-only">Toggle navigation</span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
           </button>
-          
-          <a className="navbar-brand page-scroll" href="#page-top">
-            Zagora desert Tour
-          </a>{" "}
+
+          {/* This is for internal smooth scrolling */}
+          <ScrollLink
+            to="page-top"
+            smooth={true}
+            duration={500}
+            className="navbar-brand page-scroll"
+          >
+            Zagora Desert Tour
+          </ScrollLink>
         </div>
 
-        <div
-          className="collapse navbar-collapse"
-          id="bs-example-navbar-collapse-1"
-        >
+        <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul className="nav navbar-nav navbar-right">
+            {/* Use react-scroll Link for smooth scrolling */}
             <li>
-              <a href="#features" className="page-scroll">
+              <ScrollLink to="features" smooth={true} duration={500} className="page-scroll">
                 Excursions
-              </a>
+              </ScrollLink>
             </li>
             <li>
-              <a href="#about" className="page-scroll">
+              <ScrollLink to="about" smooth={true} duration={500} className="page-scroll">
                 About
-              </a>
+              </ScrollLink>
             </li>
             <li>
-              <a href="#services" className="page-scroll">
+              <ScrollLink to="services" smooth={true} duration={500} className="page-scroll">
                 Services
-              </a>
+              </ScrollLink>
             </li>
             <li>
-              <a href="#portfolio" className="page-scroll">
-                Gallery
-              </a>
-            </li>
-            <li>
-              <a href="#testimonials" className="page-scroll">
+              <ScrollLink to="testimonials" smooth={true} duration={500} className="page-scroll">
                 Testimonials
-              </a>
+              </ScrollLink>
             </li>
             <li>
-              <a href="#team" className="page-scroll">
+              <ScrollLink to="team" smooth={true} duration={500} className="page-scroll">
                 Team
-              </a>
+              </ScrollLink>
             </li>
             <li>
-              <a href="#contact" className="page-scroll">
+              <ScrollLink to="contact" smooth={true} duration={500} className="page-scroll">
                 Contact
-              </a>
+              </ScrollLink>
+            </li>
+            {/* Use react-router-dom Link for the Login page */}
+            <li>
+              <Link to="/login" className="page-scroll">
+                <FaSignInAlt style={{ marginRight: "5px" }} />
+                Login
+              </Link>
             </li>
           </ul>
         </div>
