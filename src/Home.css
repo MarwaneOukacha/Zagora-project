@@ -1,0 +1,36 @@
+/* General Home Styles */
+.home {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .sidebar {
+    width: 240px;
+    background-color: #ffffff;
+    border-right: 1px solid #e5e7eb;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #f9fafb;
+  }
+  
+  /* Media Query for Responsive Layout */
+  @media (max-width: 768px) {
+    .home {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      border-right: none;
+    }
+  
+    .main-content {
+      padding: 10px;
+    }
+  }
+  

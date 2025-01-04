@@ -1,12 +1,12 @@
 
   
 .login-container {
+  margin-top: 50px;
     background: #fff;
     padding: 6rem; /* Substantially increased padding */
-    border-radius: 20px; /* Rounder corners for a modern look */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); /* Stronger shadow */
     width: 100%;
-    max-width: 1200px; /* Significantly increased container width */
+    max-width: 900px; /* Significantly increased container width */
     
     /* Centrage */
     position: absolute;

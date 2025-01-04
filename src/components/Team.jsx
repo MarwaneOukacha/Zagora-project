@@ -11,7 +11,7 @@ export const Team = (props) => {
         </div>
         <div key="1" className="col-md-12 col-sm-12 d-flex align-items-center">
           <div className="thumbnail d-flex">
-            <img src="/img/Mohamed.jpg" alt="Mohamed El Morabity" className="team-img" style={{ width: '300px', marginRight: '20px' }} />
+            <img src="/img/Mohamed.jpg" alt="Mohamed El Morabity" className="team-img" style={{ height: '300px', width: '300px', marginRight: '20px' }} />
             <div className="caption">
               <h4>Mohamed El Morabity</h4>
               <p><strong>Manager</strong></p>
