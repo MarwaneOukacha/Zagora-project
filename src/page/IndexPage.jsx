@@ -8,6 +8,7 @@ import { Testimonials } from "../components/testimonials";
 import { Team } from "../components/Team";
 import { Contact } from "../components/contact";
 import JsonData from "../data/data.json";
+import { Navigation } from "../components/navigation";
 
 
 
@@ -19,6 +20,7 @@ export default function IndexPage() {
   }, []);
   return (
     <>
+      <Navigation></Navigation>
       <Header data={landingPageData.Header} />
       <Features />
       <About data={landingPageData.About} />

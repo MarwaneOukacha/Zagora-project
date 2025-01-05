@@ -1,17 +1,18 @@
+import React from "react";
 import Sidebar from "../components/Sidebar";
 import Dashboard from "../components/Dashboard";
-import "../Home.css"
+import "../Home.css";
+
 function Home() {
     return (
-        <div className="home">
-            <aside className="sidebar">
-                <Sidebar />
-            </aside>
-            <div className="main-content">
+        <div className="home-container">
+            <Sidebar />
+            <main className="main-content">
                 <Dashboard />
-            </div>
+            </main>
         </div>
     );
 }
 
 export default Home;
+

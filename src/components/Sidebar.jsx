@@ -1,88 +1,99 @@
+import React, { useState, useEffect } from "react";
+import { Link, NavLink } from "react-router-dom";
 import {
-  HomeIcon,
-  UsersIcon,
-  UserPlusIcon,
-  UserCircleIcon,
-  ShieldCheckIcon,
-  ArrowLeftOnRectangleIcon,
-} from "@heroicons/react/24/outline";
-import "../Sidebar.css"
-import { NavLink } from "react-router-dom";
+  FaHome,
+  FaUserPlus,
+  FaUsers,
+  FaCalendarCheck,
+  FaSignOutAlt,
+  FaUserCircle,
+  FaBars,
+  FaRunning,
+  FaTicketAlt,
+} from "react-icons/fa";
+import "../Sidebar.css";
 
 const sidebarLinks = [
   {
     name: "Dashboard",
     href: "/",
-    icon: HomeIcon,
+    icon: <FaHome />,
   },
   {
-    name: "New Admission",
-    href: "/newadmission",
-    icon: UserPlusIcon,
+    name: "All Activities",
+    href: "/AllActivities",
+    icon: <FaRunning />,
   },
   {
-    name: "All Students",
-    href: "/allstudents",
-    icon: UsersIcon,
+    name: "All Bookings",
+    href: "/allBookings",
+    icon: <FaTicketAlt />,
+  },
+  {
+    name: "All Users",
+    href: "/allUsers",
+    icon: <FaUsers />,
   },
   {
     name: "Attendance",
     href: "/attendance",
-    icon: ShieldCheckIcon,
+    icon: <FaCalendarCheck />,
   },
 ];
 
 function Sidebar() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect if the screen width is mobile size
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    // Set initial state and add event listener
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <div className="sidebar">
-      {/* Logo */}
-      <div className="logo">
-        <span className="logo-small">AD</span>
-        <span className="logo-large">Admin</span>
-      </div>
+    <>
+      {/* Sidebar */}
+      <div className={`sidebar ${isMobile ? "mobile" : ""}`}>
+        <div className="logo">
+          <span className="Title">TIZIRI Desert Adventures</span>
+        </div>
 
-      {/* Menu Items */}
-      <div className="menu">
-        {sidebarLinks.map((item) => (
-          <NavLink
-            to={item.href}
-            key={item.name}
-            className="menu-item"
-          >
-            {({ isActive }) => (
-              <span
-                className={`menu-item-content ${isActive ? "active" : ""}`}
-              >
-                <item.icon className={`menu-item-icon ${isActive ? "active-icon" : ""}`} />
-                <span className={`menu-item-text ${isActive ? "active-text" : ""}`}>
-                  {item.name}
-                </span>
-              </span>
-            )}
-          </NavLink>
-        ))}
-      </div>
+        <div className="menu">
+          {sidebarLinks.map((item) => (
+            <NavLink
+              to={item.href}
+              key={item.name}
+              className={({ isActive }) =>
+                `menu-item ${isActive ? "active" : ""}`
+              }
+            >
+              <span className="menu-item-icon">{item.icon}</span>
+              <span className="menu-item-text">{item.name}</span>
+            </NavLink>
+          ))}
+        </div>
 
-      {/* User Details */}
-      <div className="user-details">
-        <UserCircleIcon className="user-icon" />
-        <div className="user-info">
-          <div className="user-info-header">
+        <div className="user-section">
+          <FaUserCircle className="user-icon" />
+          <div className="user-info">
             <span className="user-name">Admin</span>
-            <div className="logout">
-              <ArrowLeftOnRectangleIcon className="logout-icon" />
-              <span className="logout-text">Logout</span>
-            </div>
+            <Link to="/" className="logout-button">
+              <FaSignOutAlt />
+              <span className="user-logout">Logout</span>
+            </Link>
+
           </div>
-          <span className="user-status">Logged in as Admin</span>
         </div>
       </div>
-
-      {/* Mobile Logout Icon */}
-      <div className="mobile-logout">
-        <ArrowLeftOnRectangleIcon className="mobile-logout-icon" />
-      </div>
-    </div>
+    </>
   );
 }
 
