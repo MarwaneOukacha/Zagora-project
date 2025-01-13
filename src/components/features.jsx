@@ -4,9 +4,8 @@ import { CiCircleMore } from "react-icons/ci";
 import { Navigate, useNavigate } from "react-router-dom";
 
 export const Features = ({ data }) => {  // Destructure `data` directly from props
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   useEffect(() => {
-    console.log(data);  // Log data to ensure it's passed correctly
   }, [data]);  // Run effect when `data` changes
 
   return (
@@ -29,7 +28,7 @@ export const Features = ({ data }) => {  // Destructure `data` directly from pro
                     {/* Card Text / Paragraph */}
                     <p className="card-text">{feature.text}</p>
                     {/* View More Button */}
-                    <button className="btn btn-primary" onClick={()=>{navigate("/excursion")}}>
+                    <button className="btn btn-primary" onClick={() => { navigate(`/excursion/${feature.id}`) }}>
                       View More
                     </button>
                   </div>

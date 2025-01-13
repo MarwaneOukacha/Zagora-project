@@ -1,17 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../Excursion.css';
+import { useParams } from 'react-router-dom';
 
-const Excursion = () => {
+const Excursion = ({ data }) => {
+  const { id } = useParams(); // Extract the dynamic ID from the URL
+  const excursion = data[id - 1];
   const [activeImage, setActiveImage] = useState(0);
   const [numberOfPersons, setNumberOfPersons] = useState(1); // Default to 1 person
   const pricePerPerson = 50; // Price per person in currency units
 
-  const desertImages = [
-    '../../img/perso_img/IMG-20250103-WA0011.jpg',
-    '../../img/perso_img/IMG-20250103-WA0012.jpg',
-    '../../img/perso_img/IMG-20250103-WA0013.jpg',
-    '../../img/perso_img/IMG-20250103-WA0015.jpg',
-  ];
+
 
   const totalPrice = numberOfPersons * pricePerPerson;
 
@@ -22,20 +20,26 @@ const Excursion = () => {
     }
   };
 
+
+  useEffect(() => {
+    console.log(excursion.title);
+  }, []);
+
   return (
     <div className="desert-card">
       <div className="desert-card-content">
         {/* Left side - Photo Gallery */}
+
         <div className="desert-gallery">
           <div className="main-image">
             <img
-              src={desertImages[activeImage]}
+              src={excursion.desertImages[activeImage]}
               alt={`Desert view ${activeImage + 1}`}
             />
             <button className="like-button">❤</button>
           </div>
           <div className="thumbnail-grid">
-            {desertImages.map((image, index) => (
+            {excursion.desertImages.map((image, index) => (
               <button
                 key={index}
                 onClick={() => setActiveImage(index)}
@@ -49,22 +53,18 @@ const Excursion = () => {
 
         {/* Right side - Title, Description, and Pricing */}
         <div className="desert-info">
-          <h1>Le Sahara Marocain</h1>
+          <h1>{excursion.title}</h1>
           <div className="underline"></div>
           <p className="description">
-            Le Sahara marocain est une région fascinante qui offre des paysages
-            à couper le souffle. Avec ses vastes étendues de dunes dorées, ses
-            oasis verdoyantes et ses nuits étoilées magiques, c'est un endroit
-            unique où la nature dévoile toute sa splendeur.
+            {excursion.description}
           </p>
 
           <div className="points-of-interest">
             <h2>Points d'intérêt</h2>
             <ul>
-              <li>📍 Les dunes de Merzouga</li>
-              <li>📍 La vallée du Drâa</li>
-              <li>📍 Les oasis de Zagora</li>
-              <li>📍 Les camps nomades traditionnels</li>
+              {excursion.PointsInteret.map((point, index) => (
+                <li>📍 {point}</li>))
+              }
             </ul>
           </div>
 

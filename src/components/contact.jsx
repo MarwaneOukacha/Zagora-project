@@ -44,8 +44,7 @@ export const Contact = (props) => {
               <div className="section-title">
                 <h2>Get In Touch</h2>
                 <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
+                  Please fill out the form below to send us an email, and we will get back to you as soon as possible. Additionally, we'd love to hear your feedback about our service. Your thoughts and suggestions are important to us!
                 </p>
               </div>
               <form name="sentMessage" validate onSubmit={handleSubmit}>
@@ -154,7 +153,7 @@ export const Contact = (props) => {
         <div className="container text-center">
           <p>
             &copy; 2024 Design by{" "}
-            <a href="http://www.templatewire.com" rel="nofollow">
+            <a href="https://www.linkedin.com/in/marwane-oukacha/" rel="nofollow">
               Marwane OUKACHA
             </a>
           </p>

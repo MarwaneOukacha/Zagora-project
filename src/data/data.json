@@ -158,24 +158,106 @@
   },
   "Features": [
     {
+      "id": "1",
       "img": "img/5.jpg",
-      "title": "Begin from Chigaga",
+      "title": "Begin from Erg Lihoudi",
+      "text": "Erg Lihoudi, a serene gateway to the Moroccan desert, captivates with its tranquil dunes that gracefully rise and fall, offering an inviting introduction to the vast Sahara...."
+    },
+    {
+      "id": "2",
+      "img": "img/1.jpg",
+      "title": "Begin from Erg chegaga",
       "text": "Erg Chigaga, one of the jewels of the Moroccan desert, stands out with its majestic dunes stretching as far as the eye can see, reaching heights of over 300 meters..."
     },
     {
-      "img": "img/1.jpg",
-      "title": "Begin from Ouarzazate",
-      "text": "Ouarzazate, known as the Gateway to the Desert, is a city of captivating charm nestled at the crossroads of the Atlas Mountains and the Sahara..."
-    },
-    {
+      "id": "3",
       "img": "img/4.jpg",
       "title": "Begin from Zagora",
       "text": "Zagora, the iconic gateway to the Sahara, boasts enchanting landscapes with its kasbahs, palm groves, and ancient traditions..."
     },
     {
+      "id": "4",
       "img": "img/2.jpg",
       "title": "Camping In Desert",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    }
+  ],
+  "Excurtion": [
+    {
+      "id": "1",
+      "title": "Le Sahara marocain",
+      "description": "Le Sahara marocain est une région fascinante qui offre des paysages à couper le souffle. Avec ses vastes étendues de dunes dorées, ses oasis verdoyantes et ses nuits étoilées magiques, c'est un endroit unique où la nature dévoile toute sa splendeur.",
+      "PointsInteret": [
+        "Tamegroute",
+        "Vallée de Draa",
+        "Piste vers l'erg Lihoudi"
+      ],
+      "pricePerPerson": 50,
+      "desertImages": [
+        "/img/perso_img/IMG-20250103-WA0011.jpg",
+        "/img/perso_img/IMG-20250103-WA0012.jpg",
+        "/img/perso_img/IMG-20250103-WA0013.jpg",
+        "/img/perso_img/IMG-20250103-WA0015.jpg",
+        "/img/images/Restauration.jpg",
+        "/img/images/Restauration02.jpg"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Le Sahara Marocain",
+      "description": "Le Sahara marocain est une région fascinante qui offre des paysages à couper le souffle. Avec ses vastes étendues de dunes dorées, ses oasis verdoyantes et ses nuits étoilées magiques, c'est un endroit unique où la nature dévoile toute sa splendeur.",
+      "PointsInteret": [
+        "Tamegroute",
+        "Vallée de Draa",
+        "Piste vers l'erg Lihoudi"
+      ],
+      "pricePerPerson": 50,
+      "desertImages": [
+        "/img/images/Cump01.jpg",
+        "/img/images/sport.jpg",
+        "/img/images/more01.jpg",
+        "/img/images/more02.jpg",
+        "/img/images/Restauration04.jpg",
+        "/img/images/Restauration05.jpg"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Le Sahara Marocain",
+      "description": "Le Sahara marocain est une région fascinante qui offre des paysages à couper le souffle. Avec ses vastes étendues de dunes dorées, ses oasis verdoyantes et ses nuits étoilées magiques, c'est un endroit unique où la nature dévoile toute sa splendeur.",
+      "PointsInteret": [
+        "Tamegroute",
+        "Vallée de Draa",
+        "Piste vers l'erg Lihoudi"
+      ],
+      "pricePerPerson": 50,
+      "desertImages": [
+        "/img/images/camp02.jpg",
+        "/img/images/sport3.jpg",
+        "/img/perso_img/IMG-20250103-WA0027.jpg",
+        "/img/perso_img/IMG-20250103-WA0026.jpg",
+        "/img/images/Restauration06.jpg",
+        "/img/images/Restauration07.jpg"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Le Sahara Marocain",
+      "description": "Le Sahara marocain est une région fascinante qui offre des paysages à couper le souffle. Avec ses vastes étendues de dunes dorées, ses oasis verdoyantes et ses nuits étoilées magiques, c'est un endroit unique où la nature dévoile toute sa splendeur.",
+      "PointsInteret": [
+        "Tamegroute",
+        "Vallée de Draa",
+        "Piste vers l'erg Lihoudi"
+      ],
+      "pricePerPerson": 50,
+      "desertImages": [
+        "/img/perso_img/IMG-20250103-WA0011.jpg",
+        "/img/perso_img/IMG-20250103-WA0029.jpg",
+        "/img/perso_img/IMG-20250103-WA0036.jpg",
+        "/img/perso_img/IMG-20250103-WA0031.jpg",
+        "/img/images/Restauration.jpg",
+        "/img/images/Restauration02.jpg"
+      ]
     }
   ]
 }
