@@ -96,34 +96,29 @@
   ],
   "Testimonials": [
     {
-      "img": "img/testimonials/01.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
+      "img": "img/testimonials/04.jpg",
+      "text": "The welcome was very warm and friendly, and we had the opportunity to learn more about the region. The room and amenities were very comfortable! Cump is spacious and clean, which was highly appreciated",
+      "name": "Camille"
     },
     {
       "img": "img/testimonials/02.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "text": "A human-sized, family-friendly, and generous Cump. A beautiful stop in Zagora that I can only recommend to future travelers!",
       "name": "Johnathan Doe"
     },
     {
       "img": "img/testimonials/03.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/04.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
+      "text": "The owner is a well-known marathon runner and is extremely welcoming, as is the rest of the staff (Special mention ++ to the cook).The room is spacious, with a pleasant decoration, hot water, Wi-Fi, and heating with a split system — everything is in good order.The breakfast is quite good, as well as the dinners we had at this Cump.",
+      "name": "JI"
     },
     {
       "img": "img/testimonials/05.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
+      "text": "The staff is attentive and caring. The breakfast is generous and delicious.The rooms are spacious and clean. Comfortable beds.There is parking available right next to the Cump.",
+      "name": "Tony"
     },
     {
       "img": "img/testimonials/06.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
+      "text": "Small Cump with exceptional hospitality. Everything is refined and clean.The cuisine is very well-prepared and wonderful.",
+      "name": "Virginie"
     }
   ],
   "Team": [
