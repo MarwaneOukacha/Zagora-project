@@ -204,6 +204,7 @@ a:focus,
   outline-offset: none;
 }
 /* Header Section */
+
 .intro {
   display: table;
   width: 100%;
@@ -214,7 +215,7 @@ a:focus,
   background-size: cover; /* Make the background image cover the full container */
   -o-background-size: cover;
   background-position: center center; /* Center the background image */
-  animation: changeBackground 20s infinite; /* Change every 20 seconds */
+  animation: changeBackground 7s infinite; /* Change every 20 seconds */
 }
 
 @keyframes changeBackground {
@@ -745,3 +746,30 @@ label {
   }
 }
 
+@media (max-width: 300px) { 
+  .intro h1 {
+    font-size: 24px; /* Ajustez à une taille appropriée */
+  }
+
+  .intro p {
+    font-size: 12px; /* Ajustez à une taille appropriée */
+    margin-bottom: 20px; /* Ajustez à une valeur appropriée */
+  }
+
+  .intro {
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .service-desc {
+    font-size: 10px; /* Ajustez à une taille appropriée */
+  }
+
+  #menu.navbar-default .navbar-nav > li > a {
+    font-size: 10px; /* Ajustez à une taille appropriée */
+  }
+
+  #testimonials .testimonial-item {
+    margin: 0 5px; /* Ajustez à une valeur appropriée */
+  }
+}

@@ -1,24 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import '../Excursion.css';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const Excursion = ({ data }) => {
   const { id } = useParams(); // Extract the dynamic ID from the URL
+  const navigate = useNavigate();
   const excursion = data[id - 1];
   const [activeImage, setActiveImage] = useState(0);
-  const [numberOfPersons, setNumberOfPersons] = useState(1); // Default to 1 person
-  const pricePerPerson = 50; // Price per person in currency units
 
-
-
-  const totalPrice = numberOfPersons * pricePerPerson;
-
-  const handleIncrease = () => setNumberOfPersons(numberOfPersons + 1);
-  const handleDecrease = () => {
-    if (numberOfPersons > 1) {
-      setNumberOfPersons(numberOfPersons - 1);
-    }
-  };
 
 
   useEffect(() => {
@@ -60,7 +49,7 @@ const Excursion = ({ data }) => {
           </p>
 
           <div className="points-of-interest">
-            <h2>Points d'intérêt</h2>
+            <h2>Points of Interest</h2>
             <ul>
               {excursion.PointsInteret.map((point, index) => (
                 <li>📍 {point}</li>))
@@ -69,10 +58,9 @@ const Excursion = ({ data }) => {
           </div>
 
           <div className="best-time-to-visit">
-            <h3>🗓 Meilleure période pour visiter</h3>
+            <h3>🗓 Best Time to Visit</h3>
             <p>
-              D'octobre à avril, lorsque les températures sont plus clémentes et
-              que les conditions sont idéales pour l'exploration du désert.
+              {excursion.details}
             </p>
           </div>
 
@@ -80,30 +68,20 @@ const Excursion = ({ data }) => {
           <div className="pricing-info">
             <h3>Tarifs</h3>
             <div className="person-control">
-              <button
-                onClick={handleDecrease}
-                disabled={numberOfPersons <= 1}
-                className="person-control-button"
-              >
-                -
-              </button>
-              <span className="person-count">{numberOfPersons} Personne{numberOfPersons > 1 ? 's' : ''}</span>
-              <button
-                onClick={handleIncrease}
-                className="person-control-button"
-              >
-                +
-              </button>
+
+              {excursion.price.map((prices, index) => (
+                <p>Prix : <strong>{prices}</strong></p>
+              ))
+              }
             </div>
-            <p>Prix par personne : <strong>{pricePerPerson}€</strong></p>
-            <p>Prix total : <strong>{totalPrice}€</strong></p>
+
           </div>
 
-          <div className="rating">
+          {/*<div className="rating">
             ⭐⭐⭐⭐⭐ <span>4.8 (120 avis)</span>
-          </div>
+          </div>*/}
 
-          <button className="book-button">
+          <button className="book-button" onClick={() => (navigate(`/Reservation/${id}`))}>
             Réserver votre aventure dans le désert
           </button>
         </div>
