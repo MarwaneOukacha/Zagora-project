@@ -1,48 +1,78 @@
 import React from "react";
-import { GiCampingTent } from "react-icons/gi";
-import { GiPartyPopper } from "react-icons/gi";
-import { GiFullMotorcycleHelmet } from "react-icons/gi";
-import { IoIosRestaurant } from "react-icons/io";
+import { FaTruck, FaCreditCard, FaWallet, FaPalette, FaHeadphones, FaAward } from "react-icons/fa";
 
-export const Services = (props) => {
+export const Services = () => {
+  const services = [
+    {
+      icon: <FaTruck className="w-12 h-12" />,
+      title: "FAST AND FREE DELIVERY",
+      description: "Free delivery anywhere in Morocco within 72 hours.",
+    },
+    {
+      icon: <FaCreditCard className="w-12 h-12" />,
+      title: "PAYMENT ON DELIVERY",
+      description: "Pay when you receive the product and check it before paying.",
+    },
+    {
+      icon: <FaWallet className="w-12 h-12" />,
+      title: "MONEY-BACK GUARANTEE",
+      description:
+        "You are entitled to a refund if you're not satisfied with the product due to our refund policy. Click to learn more.",
+    },
+    {
+      icon: <FaPalette className="w-12 h-12" />,
+      title: "YOUR CUSTOM DESIGN",
+      description:
+        "We can weave your custom design—just contact us! Click to learn more.",
+    },
+    {
+      icon: <FaHeadphones className="w-12 h-12" />,
+      title: "24/7 CUSTOMER SUPPORT",
+      description:
+        "We are happy to assist you via phone and answer all your questions 24/7.",
+    },
+    {
+      icon: <FaAward className="w-12 h-12" />,
+      title: "PREMIUM QUALITY",
+      description: "We always check the quality of our products before shipping.",
+    },
+  ];
+
+  const iconMap = {
+    FaTruck: <FaTruck className="GiCampingTent" />,
+    FaCreditCard: <FaCreditCard className="GiCampingTent" />,
+    FaWallet: <FaWallet className="GiCampingTent" />,
+    FaPalette: <FaPalette className="GiCampingTent" />,
+    FaHeadphones: <FaHeadphones className="GiCampingTent" />,
+    FaAward: <FaAward className="GiCampingTent" />
+  };
   return (
     <div id="services" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>Our Services</h2>
-          <p>
-            Services offered by Acacia Voyages: a range of tailor-made tours adaptable to your desires.
-          </p>
+          <div className="max-w-7xl mx-auto px-4 text-center space-y-8">
+            {/* French Subtitle */}
+            <div className="space-y-2">
+              <h3 className="text-xl md:text-2xl font-semibold text-[#2D2D2D] uppercase tracking-wide">
+                We ensure the highest quality control before shipping each product.
+              </h3>
+            </div>
+
+            {/* Delivery Text */}
+            <p className="text-gray-600 text-lg md:text-xl pt-4">Pay when the product is delivered and check it before you pay.</p>
+          </div>
         </div>
         <div className="row">
-          <div key="service 01" className="col-md-4">
-            <GiCampingTent className="GiCampingTent " />
-            <div className="service-desc">
-              <h3>Camping</h3>
-              <p>Accommodation in two-person tents with 10 cm thick foam mattresses (single tent available on request).</p>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-20">
+            {services.map((feature, index) => (
+              <div key={index} className="flex flex-col items-center text-center">
+                <div className="rounded-full border-4 border-gray-300 p-8 mb-8">{feature.icon}</div>
+                <h3 className="font-bold text-2xl mb-6">{feature.title}</h3>
+                <p className="text-gray-700 text-lg">{feature.description}</p>
+              </div>
+            ))}
           </div>
-          <div key="service 02" className="col-md-4">
-            <GiPartyPopper className="GiCampingTent " />
-            <div className="service-desc">
-              <h3>Party</h3>
-              <p>Special evenings or themed trips can be organized in the heart of the Moroccan desert (New Year's Eve, birthdays, honeymoons, etc.).</p>
-            </div>
-          </div>
-          <div key="service 03" className="col-md-4">
-            <GiFullMotorcycleHelmet className="GiCampingTent " />
-            <div className="service-desc">
-              <h3>Unleashing the Thrill: The Adventure of Motorcycle Riding</h3>
-              <p>Riding a motorcycle in the desert offers a thrilling combination of adventure and challenge. The vast, open landscapes, shifting dunes, and rugged terrain test both skill and endurance, making it an unforgettable experience. With the roar of the engine and the endless horizon ahead, every journey becomes a true escape into the wild</p>
-            </div>
-          </div>
-          <div key="service 04" className="col-md-4">
-            <IoIosRestaurant className="GiCampingTent " />
-            <div className="service-desc">
-              <h3>An Exquisite Journey Through Moroccan Cuisine</h3>
-              <p>Moroccan cuisine is a delightful fusion of flavors, aromas, and traditions, offering a culinary journey like no other. From the iconic tagines and fluffy couscous to the rich harira soup and sweet pastilla, each dish reflects the country's vibrant culture. Infused with spices like saffron, cinnamon, and cumin, and paired with freshly baked bread and mint tea, Moroccan food is a feast for both the palate and the soul</p>
-            </div>
-          </div>
+
         </div>
 
       </div>

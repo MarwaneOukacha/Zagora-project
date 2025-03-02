@@ -1,10 +1,11 @@
-import React from "react";
-import { FaSignInAlt } from "react-icons/fa"; // Import the login icon
-import { Link, useLocation } from "react-router-dom"; // Import Link and useLocation from react-router-dom
-import { Link as ScrollLink } from "react-scroll"; // Import Link from react-scroll for smooth scrolling
+import { FaSignInAlt, FaUserPlus } from "react-icons/fa" // Import login and signup icons
+import { Link, useLocation } from "react-router-dom"
+import { Link as ScrollLink } from "react-scroll"
+import logo from "../assets/logo.png";
+import "../navigation.css"
 
 export const Navigation = (props) => {
-  const location = useLocation();
+  const location = useLocation()
 
   // Helper function to conditionally render links
   const renderLink = (to, label) => {
@@ -13,15 +14,15 @@ export const Navigation = (props) => {
         <ScrollLink to={to} smooth={true} duration={500} className="page-scroll">
           {label}
         </ScrollLink>
-      );
+      )
     } else {
       return (
         <Link to="/" className="page-scroll">
           {label}
         </Link>
-      );
+      )
     }
-  };
+  }
 
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
@@ -33,25 +34,19 @@ export const Navigation = (props) => {
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
           >
-            <span className="sr-only">Toggle navigation</span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
+            {/* Collapse button */}
           </button>
 
-          {/* Conditionally render ScrollLink or Link for the brand */}
+          {/* Conditionally render ScrollLink or Link for the brand logo */}
           {location.pathname === "/" ? (
-            <ScrollLink
-              to="page-top"
-              smooth={true}
-              duration={500}
-              className="navbar-brand page-scroll"
-            >
-              Zagora Desert Tour
+            <ScrollLink to="page-top" smooth={true} duration={500} className="navbar-brand page-scroll">
+              <img src={logo} alt="Company Logo" className="logo-img" />
+              <span className="company-name">Petri Handcrafted Ceramics</span> {/* Company name */}
             </ScrollLink>
           ) : (
             <Link to="/" className="navbar-brand page-scroll">
-              Zagora Desert Tour
+              <img src={logo} alt="Company Logo" className="logo-img" />
+              <span className="company-name">Petri Handcrafted Ceramics</span> {/* Company name */}
             </Link>
           )}
         </div>
@@ -64,16 +59,22 @@ export const Navigation = (props) => {
             <li>{renderLink("testimonials", "Testimonials")}</li>
             <li>{renderLink("team", "Team")}</li>
             <li>{renderLink("contact", "Contact")}</li>
-            {/* Use react-router-dom Link for the Login page */}
+            {/* Use react-router-dom Link for the Login and Signup pages */}
             <li>
               <Link to="/login" className="page-scroll">
                 <FaSignInAlt style={{ marginRight: "5px" }} />
                 Login
               </Link>
             </li>
+            <li>
+              <Link to="/signup" className="page-scroll">
+                <FaUserPlus style={{ marginRight: "5px" }} />
+                Signup
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-  );
-};
+  )
+}

@@ -1,153 +1,56 @@
 {
   "Header": {
-    "title": "Top rated Morocco Desert Tour",
+    "title": "",
     "paragraph": ""
   },
-  "About": {
-    "paragraph": "Specialized in travel across Morocco, we offer tailor-made tours by 4x4, camelback, or on foot for hiking or trekking in the Zagora desert. With our expert guides and know-how, we provide a unique experience for your stay in the Zagora region. Meet the locals, be accompanied by our experienced guides, discover life in a bivouac, or embark on a trek while staying with locals, in a kasbah, or in a tent in the heart of the desert",
-    "Why": [
-      "Unforgettable adventure",
-      "Discovery",
-      "Expert Guides & Authentic Experiences"
-    ],
-    "Why2": [
-      "Rich Cultural Connection",
-      "Sustainability & Responsible Travel"
-    ]
+  "navbar": [
+    {
+      "id": "2",
+      "title": "PRODUCTS",
+      "link": "/allproducts"
+    },
+    {
+      "id": "3",
+      "title": "COLLECTIONS",
+      "link": "/collections"
+    },
+    {
+      "id": "4",
+      "title": "INFOS",
+      "link": "/infos"
+    },
+    {
+      "id": "5",
+      "title": "CONTACT",
+      "link": "/contact"
+    }
+  ],
+  "products":[
+    {
+    "name": "Wireless Headphones",
+    "description": "High-quality sound with noise cancellation.",
+    "price": 99.99,
+    "image": "/img/Home1.jpg"
   },
-  "Gallery": [
-    {
-      "title": "Project Title",
-      "largeImage": "img/perso_img/IMG-20250103-WA0011.jpg",
-      "smallImage": "img/perso_img/IMG-20250103-WA0011.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/perso_img/IMG-20250103-WA0014.jpg",
-      "smallImage": "img/perso_img/IMG-20250103-WA0014.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/perso_img/IMG-20250103-WA0011.jpg",
-      "smallImage": "img/perso_img/IMG-20250103-WA0011.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/04-large.jpg",
-      "smallImage": "img/portfolio/04-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/05-large.jpg",
-      "smallImage": "img/portfolio/05-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/06-large.jpg",
-      "smallImage": "img/portfolio/06-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/07-large.jpg",
-      "smallImage": "img/portfolio/07-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "/08-large.jpg",
-      "smallImage": "img/portfolio/08-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/09-large.jpg",
-      "smallImage": "img/portfolio/09-small.jpg"
-    }
-  ],
-  "Services": [
-    {
-      "icon": "fa-solid fa-utensils",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    }
-  ],
-  "Testimonials": [
-    {
-      "img": "img/testimonials/01.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/02.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
-    },
-    {
-      "img": "img/testimonials/03.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/04.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
-    },
-    {
-      "img": "img/testimonials/05.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/06.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
-    }
-  ],
-  "Team": [
-    {
-      "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
-    },
-    {
-      "img": "img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
-    }
-  ],
+  {
+    "name": "Wireless Headphones",
+    "description": "High-quality sound with noise cancellation.",
+    "price": 99.99,
+    "image": "/img/Home2.jpg"
+  },
+  {
+    "name": "Wireless Headphones",
+    "description": "High-quality sound with noise cancellation.",
+    "price": 99.99,
+    "image": "/img/Home3.jpg"
+  },
+  {
+    "name": "Wireless Headphones",
+    "description": "High-quality sound with noise cancellation.",
+    "price": 99.99,
+    "image": "/img/Home4.jpg"
+  }
+],
   "Contact": {
     "address": "4321 California St, San Francisco, CA 12345 ",
     "phone": "+1 123 456 1234",
@@ -155,27 +58,6 @@
     "facebook": "fb.com",
     "twitter": "twitter.com",
     "youtube": "youtube.com"
-  },
-  "Features": [
-    {
-      "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    }
-  ]
+  }
+
 }

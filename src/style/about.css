@@ -1,0 +1,47 @@
+.about-container {
+    min-height: 100vh;
+  }
+  
+  .about-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about-card {
+    background-color: #2a470c;
+    color: white;
+    border-radius: 24px;
+    padding: 32px;
+    text-align: center;
+  }
+  
+  .about-title {
+    font-size: 2rem; /* Default font size */
+    margin-bottom: 32px;
+    font-weight: 300;
+    color: white;
+  }
+  
+  .about-text {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75;
+    margin-top: 16px;
+  }
+  
+  .about-text p {
+    margin-bottom: 24px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 1.5rem;
+    }
+  
+    .about-text {
+      font-size: 1rem; /* 16px */
+    }
+  }
+  
